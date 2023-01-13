@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://sv/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sv/">
+
+<xs:element name="Calcular_la_Fuerza" type="tns:Calcular_la_Fuerza"/>
+
+<xs:element name="Calcular_la_FuerzaResponse" type="tns:Calcular_la_FuerzaResponse"/>
+
+<xs:element name="Division" type="tns:Division"/>
+
+<xs:element name="DivisionResponse" type="tns:DivisionResponse"/>
+
+<xs:element name="EnergiaCinetica" type="tns:EnergiaCinetica"/>
+
+<xs:element name="EnergiaCineticaResponse" type="tns:EnergiaCineticaResponse"/>
+
+<xs:element name="Eurodolar" type="tns:Eurodolar"/>
+
+<xs:element name="EurodolarResponse" type="tns:EurodolarResponse"/>
+
+<xs:element name="LoguinAcceso" type="tns:LoguinAcceso"/>
+
+<xs:element name="LoguinAccesoResponse" type="tns:LoguinAccesoResponse"/>
+
+<xs:element name="MovimientoUniforme" type="tns:MovimientoUniforme"/>
+
+<xs:element name="MovimientoUniformeResponse" type="tns:MovimientoUniformeResponse"/>
+
+<xs:element name="Multiplicacion" type="tns:Multiplicacion"/>
+
+<xs:element name="MultiplicacionResponse" type="tns:MultiplicacionResponse"/>
+
+<xs:element name="Resta" type="tns:Resta"/>
+
+<xs:element name="RestaResponse" type="tns:RestaResponse"/>
+
+<xs:element name="Suma" type="tns:Suma"/>
+
+<xs:element name="SumaResponse" type="tns:SumaResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="LoguinAcceso">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LoguinAccesoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Division">
+<xs:sequence>
+<xs:element name="valor1" type="xs:double"/>
+<xs:element name="valor2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DivisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Multiplicacion">
+<xs:sequence>
+<xs:element name="valor1" type="xs:double"/>
+<xs:element name="valor2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MultiplicacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MovimientoUniforme">
+<xs:sequence>
+<xs:element name="velocidad" type="xs:double"/>
+<xs:element name="tiempo" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MovimientoUniformeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Resta">
+<xs:sequence>
+<xs:element name="valor1" type="xs:double"/>
+<xs:element name="valor2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RestaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EnergiaCinetica">
+<xs:sequence>
+<xs:element name="masa" type="xs:double"/>
+<xs:element name="velocidad" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EnergiaCineticaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Suma">
+<xs:sequence>
+<xs:element name="valor1" type="xs:double"/>
+<xs:element name="valor2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Calcular_la_Fuerza">
+<xs:sequence>
+<xs:element name="masa" type="xs:double"/>
+<xs:element name="acelaracion" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Calcular_la_FuerzaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Eurodolar">
+<xs:sequence>
+<xs:element name="valor" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EurodolarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

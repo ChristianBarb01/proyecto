@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="Cargardatos" type="tns:Cargardatos"/>
+
+<xs:element name="CargardatosResponse" type="tns:CargardatosResponse"/>
+
+<xs:element name="Depositar" type="tns:Depositar"/>
+
+<xs:element name="DepositarResponse" type="tns:DepositarResponse"/>
+
+<xs:element name="LoguinAcceso" type="tns:LoguinAcceso"/>
+
+<xs:element name="LoguinAccesoResponse" type="tns:LoguinAccesoResponse"/>
+
+<xs:element name="Registrar" type="tns:Registrar"/>
+
+<xs:element name="RegistrarResponse" type="tns:RegistrarResponse"/>
+
+<xs:element name="Retirar" type="tns:Retirar"/>
+
+<xs:element name="RetirarResponse" type="tns:RetirarResponse"/>
+
+<xs:complexType name="Cargardatos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="CargardatosResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Depositar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DepositarResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Retirar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RetirarResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Registrar">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:double"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegistrarResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="LoguinAcceso">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LoguinAccesoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
